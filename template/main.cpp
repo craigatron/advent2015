@@ -59,7 +59,7 @@ int main(int argc, char **argv)
     ClockTime p2_start = Clock::now();
     auto p2 = part2(argv[1]);
     ClockTime p2_end = Clock::now();
-    auto duration2 = chrono::duration_cast<chrono::milliseconds>(p1_end - p1_start);
+    auto duration2 = chrono::duration_cast<chrono::milliseconds>(p2_end - p2_start);
     cout << "Part 2: " << p2 << std::endl;
     cout << "took " << duration2.count() << " ms" << endl;
 }
